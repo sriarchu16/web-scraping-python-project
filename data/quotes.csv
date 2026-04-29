@@ -1,0 +1,25 @@
+
+#Save Scraped Data to a CSV File
+import requests
+from bs4 import BeautifulSoup
+import csv
+
+#Step1: Send an HTTP request to the website
+url="https://quotes.toscrape.com"
+response=requests.get(url)
+
+#Step2: Parse the HTML content
+soup=BeautifulSoup(response.text,"html.parser")
+
+#Step3: Extract quotes
+quotes=soup.find_all("span",class_="text")
+
+
+#Step4: Open a CSV file to save the data
+with open("quotes.csv", "w", newline="", encoding="utf-8") as file:
+    writer=csv.writer(file)
+    writer.writerow(["Quote"]) #Column header
+
+    for quote in quotes:
+        writer.writerow([quote.text]) #Save quotes to csv
+        
