@@ -53,7 +53,7 @@ web-scraping-python-project/
 1. Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USERNAME/web-scraping-python-project.git
+git clone https://github.com/sriarchu16/web-scraping-python-project.git
 cd web-scraping-python-project
 ```
 
