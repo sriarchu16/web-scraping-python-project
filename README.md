@@ -97,7 +97,7 @@ Quote
 
 ## Screenshots
 
-(Add your screenshot here)
+<img width="1260" height="342" alt="output" src="https://github.com/user-attachments/assets/5fe5aa4d-d225-4227-9137-647f8a76a22a" />
 
 ```
 ![Output](screenshots/output.png)
